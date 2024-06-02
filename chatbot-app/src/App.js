@@ -41,7 +41,6 @@ function App() {
     [setEdges]
   );
 
-  // Drop Node Function
   
   const onDrop = useCallback(
     (event) => {
@@ -67,7 +66,6 @@ function App() {
   );
 
 
-  // Saved Functionality
   const saveFlow = () => {
     const nodesWithNoTargets = nodes.filter(
       (node) => !edges.some((edge) => edge.target === node.id)
@@ -121,7 +119,8 @@ function App() {
             }
             draggable
           >
-            <AiOutlineMessage size={25} />
+       <AiOutlineMessage size={25} />
+
             <p>Message</p>
           </div>
           <Page
